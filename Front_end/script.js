@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     
-    const API_URL = 'http://localhost:3000/students';
+    const API_URL = 'https://sims-backend-jyqd.onrender.com/students';
     let allStudents = []; 
 
     
