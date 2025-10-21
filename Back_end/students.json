@@ -1,0 +1,20 @@
+[
+  {
+    "studentId": "BP-113-00001",
+    "fullName": "Chelsea Greer",
+    "gender": "Female",
+    "gmail": "Chelseagereer@gmailcom",
+    "program": "BS Physics",
+    "yearLevel": 5,
+    "university": "Caraga State University - Cabadbaran Campus"
+  },
+  {
+    "studentId": "BM - 113 - 00002",
+    "fullName": "Nicolas Medina ",
+    "gender": "Male",
+    "gmail": "Nicolasmedina@gmail.com",
+    "program": "BS Mathematics",
+    "yearLevel": 5,
+    "university": "Caraga State University - Main Campus"
+  }
+]

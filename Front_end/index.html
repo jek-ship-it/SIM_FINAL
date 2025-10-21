@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Info Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Student Information Management System</h1>
+
+        <form id="studentForm" class="student-form">
+            <h2>Add New Student</h2>
+            <div class="form-grid">
+                <input type="text" id="studentId" placeholder="Student ID" required>
+                <input type="text" id="fullName" placeholder="Full Name" required>
+                <select id="gender" required>
+                    <option value="" disabled selected>Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+                <input type="email" id="gmail" placeholder="Gmail" required>
+                <input type="text" id="program" placeholder="Program (e.g., BSCS)" required>
+                <input type="number" id="yearLevel" placeholder="Year Level" min="1" max="5" required>
+                <input type="text" id="university" placeholder="University" required>
+            </div>
+            <button type="submit">Add Student</button>
+        </form>
+
+        <div class="student-list-container">
+            <h2>Student List</h2>
+            
+            <div class="filter-controls">
+                <input type="text" id="searchInput" placeholder="Search by name...">
+                <select id="filterGender">
+                    <option value="">All Genders</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+
+            <table id="studentTable">
+                <thead>
+                    <tr>
+                        <th>Student ID</th>
+                        <th>Full Name</th>
+                        <th>Gender</th>
+                        <th>Gmail</th>
+                        <th>Program</th>
+                        <th>Year</th>
+                        <th>University</th>
+                    </tr>
+                </thead>
+                <tbody id="studentList">
+                    </tbody>
+            </table>
+            <p id="noStudentsMessage" class="hidden">No students found.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
